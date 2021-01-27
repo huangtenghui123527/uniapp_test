@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "main",
+  "usingComponents": {
+    "home": "/pages/home/index",
+    "information": "/pages/information/index",
+    "help": "/pages/help/index",
+    "mine": "/pages/mine/index",
+    "navigater": "/wxComponents/Navigater/index"
+  }
+}

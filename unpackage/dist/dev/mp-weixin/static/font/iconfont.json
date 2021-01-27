@@ -1,0 +1,65 @@
+{
+  "id": "2288048",
+  "name": "myicon",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1397995",
+      "name": "Right",
+      "font_class": "Right",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "15904315",
+      "name": "left",
+      "font_class": "left",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "736012",
+      "name": "所有商品2",
+      "font_class": "suoyoushangpin2",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "5167809",
+      "name": "shoppingtop",
+      "font_class": "shoppingtop",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "1842108",
+      "name": "help",
+      "font_class": "help",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "4678355",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e720",
+      "unicode_decimal": 59168
+    },
+    {
+      "icon_id": "14843456",
+      "name": "资讯",
+      "font_class": "zixun",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "15712480",
+      "name": "mine",
+      "font_class": "mine",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    }
+  ]
+}

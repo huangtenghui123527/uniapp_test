@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "vuex": "^3.6.0"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "vuex": "^3.6.0"
+  }
+}

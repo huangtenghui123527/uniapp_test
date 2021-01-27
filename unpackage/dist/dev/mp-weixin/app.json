@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/main/index",
+    "pages/details/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#007AFF",
+    "backgroundColor": "#FFFFFF",
+    "navigationStyle": "custom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "测试"
+    }
+  },
+  "uniStatistics": {
+    "enable": true
+  },
+  "usingComponents": {}
+}

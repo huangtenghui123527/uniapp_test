@@ -1,0 +1,66 @@
+.nav-warp {
+  padding: 20rpx 0;
+  width: 90%;
+  position: fixed;
+  left: 50%;
+  bottom: 20rpx;
+  border: 1rpx solid rgba(0,0,0,0.15);
+  background-color: #ef384a;
+  box-shadow: 0 0 20rpx 0 rgba(0,0,0,0.22);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 80rpx;
+}
+.nav-warp .btn-area {
+  width: 100%;
+  height: 50rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.nav-warp .btn-area ._li {
+  width: 25%;
+  text-align: center;
+  font-size: 28rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  color: rgba(255,255,255,0.85);
+}
+.nav-warp .btn-area .shopping_mall {
+  position: relative;
+  top: -24rpx;
+  padding: 20rpx 20rpx 0 20rpx;
+  background: #ef384a;
+  border-radius: 50%;
+  width: 140rpx;
+  height: 140rpx;
+}
+.nav-warp .btn-area .shopping_mall ._i {
+  font-size: 68rpx;
+  color: #fff;
+  margin-bottom: 4rpx;
+}
+.nav-warp .btn-area ._i {
+  font-size: 40rpx;
+}
+.nav-warp .btn-area text {
+  font-size: 26rpx;
+}
+.nav-warp .btn-area .current_select {
+  color: #fed69e;
+}
+

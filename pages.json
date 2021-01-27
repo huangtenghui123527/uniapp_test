@@ -1,0 +1,64 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages":[
+		{
+		    "path" : "pages/main/index",
+		    "style" : {	"navigationBarTitleText": "main"}
+		},{
+            "path" : "pages/details/index",
+            "style" : {"navigationBarTitleText": "详情"}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#FFFFFF",
+		"navigationStyle":"custom"  
+	}
+	// "condition" : { //模式配置，仅开发期间生效
+	// 	"current": 0, //当前激活的模式(list 的索引项)
+	// 	"list": [
+	// 		{
+	// 			"name": "", //模式名称
+	// 			"path": "", //启动页面，必选
+	// 			"query": "" //启动参数，在页面的onLoad函数里面得到
+	// 		}
+	// 	]
+	// }
+	// 默认tab导航
+	// "tabBar":{
+	// 	"color":"#333",
+	// 	"selectedColor":"deepskyblue",
+	// 	"backgroundColor":"#efefef",
+	// 	"borderStyle":"black",
+	// 	"list":[
+	// 		{
+	// 			"pagePath":"pages/home/index",
+	// 			"text":"首页",
+	// 			"iconPath":"./static/image/nav/home.png",
+	// 			"selectedIconPath":"./static/image/nav/home.png"
+	// 		// },
+	// 		{
+	// 			"pagePath":"pages/information/index",
+	// 			"text":"资讯",
+	// 			"iconPath":"static/image/nav/information.png",
+	// 			"selectedIconPath":"static/image/nav/Information.png"
+	// 		},
+	// 		{
+	// 			"pagePath":"pages/help/index",
+	// 			"text":"帮助",
+	// 			"iconPath":"static/image/nav/Help.png",
+	// 			"selectedIconPath":"static/image/nav/Help.png"
+	// 		},
+	// 		{
+	// 			"pagePath":"pages/mine/index",
+	// 			"text":"我的",
+	// 			"iconPath":"static/image/nav/user.png",
+	// 			"selectedIconPath":"static/image/nav/user.png"
+	// 		}
+	// 	]
+	// }
+}
