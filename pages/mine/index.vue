@@ -1,7 +1,6 @@
 <template>
 	<view class="container">
 		<image class="container-bg" :src="imgPath" ></image>
-		
 	</view>
 </template>
 

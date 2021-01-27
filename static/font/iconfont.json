@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "584025",
+      "name": "定位",
+      "font_class": "dingwei",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "1232400",
+      "name": "快递运输",
+      "font_class": "kuaidiyunshu",
+      "unicode": "e71c",
+      "unicode_decimal": 59164
+    },
+    {
+      "icon_id": "5387813",
+      "name": "火箭加速_o",
+      "font_class": "huojianjiasu_o",
+      "unicode": "eb61",
+      "unicode_decimal": 60257
+    },
+    {
       "icon_id": "1397995",
       "name": "Right",
       "font_class": "Right",

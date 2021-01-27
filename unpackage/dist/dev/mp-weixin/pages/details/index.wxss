@@ -27,8 +27,97 @@
 .goods-detail.data-v-2a5948ac {
   width: 100%;
   height: 100%;
+  background-color: #F3F4F6;
 }
 .goods-detail .detail-img.data-v-2a5948ac {
   width: 100%;
+}
+.goods-detail .detail-message.data-v-2a5948ac {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #fff;
+}
+.goods-detail .detail-message .dm-title.data-v-2a5948ac {
+  font-size: 16px;
+  color: #000;
+  font-weight: 999;
+}
+.goods-detail .detail-message .dm-price.data-v-2a5948ac {
+  color: #EF3A25;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.goods-detail .detail-message .dm-price ._span.data-v-2a5948ac {
+  font-size: 14px;
+}
+.goods-detail .detail-message ._ul.data-v-2a5948ac {
+  width: 100%;
+  color: #333;
+}
+.goods-detail .detail-message ._ul ._li.data-v-2a5948ac {
+  font-size: 14px;
+}
+.goods-detail .detail-message ._ul ._li ._i.data-v-2a5948ac {
+  display: inline-block;
+  color: #EF3A25;
+  font-size: 18px;
+  margin-right: 5px;
+}
+.goods-detail .detail-info.data-v-2a5948ac {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+.goods-detail .detail-info .di-title.data-v-2a5948ac {
+  font-size: 24px;
+  color: #000;
+  padding: 20px 0;
+}
+.goods-detail .detail-info .ul-tab.data-v-2a5948ac {
+  width: 100%;
+}
+.goods-detail .detail-info .ul-tab ._li.data-v-2a5948ac {
+  width: 90px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  color: #B6B6B6;
+  border: 1px solid;
+}
+.goods-detail .detail-info .ul-tab .select.data-v-2a5948ac {
+  color: #2D2D2D;
+}
+.goods-detail .detail-info .ul-detail.data-v-2a5948ac {
+  width: 100%;
+}
+.goods-detail .detail-info .ul-detail ._li.data-v-2a5948ac {
+  width: 100%;
+}
+.goods-detail .detail-info .ul-detail ._li image.data-v-2a5948ac {
+  width: 100%;
+}
+.goods-detail .detail-info .ul-detail .ul-img.data-v-2a5948ac {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.goods-detail .detail-info .ul-detail .params-info.data-v-2a5948ac {
+  margin-top: 15px;
+  color: #A0A0A0;
+  font-size: 16px;
+}
+.goods-detail .detail-info .ul-detail .params-info .params.data-v-2a5948ac {
+  width: 50%;
+}
+.goods-detail .detail-info .ul-comment.data-v-2a5948ac, .goods-detail .detail-info .ul-policy.data-v-2a5948ac {
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.goods-detail .detail-info .ul-comment ._li.data-v-2a5948ac, .goods-detail .detail-info .ul-policy ._li.data-v-2a5948ac {
+  width: 100%;
+  margin-top: 10px;
+  color: #9A9A9A;
 }
 
