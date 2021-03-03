@@ -35,16 +35,96 @@
 				<li class="params-info">爱好：一天天的就刷抖音</li>
 			</ul>
 			<ul class="ul-comment" v-if="select==2">
-				<li>小老头：</li>
-				<li>糟老头</li>
-				<li>坏老头</li>
-				<li>花老头</li>
+				<li class="clearfix">
+					<view class="portrait">
+						<i class="icon iconfont icon-mine"></i>
+					</view>
+					<view class="comment-content">
+						<p class="content-title">小老头</p>
+						<p>咱们来玩个游戏吧</p>
+						<p class="content-footer"><text>2020-12-01</text><span>回复</span></p>
+					</view>
+				</li>
+				<li class="clearfix">					
+					<view class="portrait portrait-child">
+						<i class="icon iconfont icon-mine"></i>
+					</view>
+					<view class="comment-content">
+						<p class="content-title">小虎牙</p>
+						<p>嗯好啊，玩什么？</p>
+						<p class="content-footer"><text>2020-12-01</text><span>回复</span></p>
+					</view>
+				</li>
+				<li class="clearfix">
+					<view class="portrait portrait-child">
+						<i class="icon iconfont icon-mine"></i>
+					</view>
+					<view class="comment-content">
+						<p class="content-title">小老头</p>
+						<p>我夸你一句，你夸我一句怎么样？</p>
+						<p class="content-footer"><text>2020-12-01</text><span>回复</span></p>
+					</view></li>
+				<li class="clearfix">
+					<view class="portrait portrait-child">
+						<i class="icon iconfont icon-mine"></i>
+					</view>
+					<view class="comment-content">
+						<p class="content-title">小虎牙</p>
+						<p>可以啊，你先说。</p>
+						<p class="content-footer"><text>2020-12-01</text><span>回复</span></p>
+					</view>
+				</li>
+				<li class="clearfix">
+					<view class="portrait portrait-child">
+						<i class="icon iconfont icon-mine"></i>
+					</view>
+					<view class="comment-content">
+						<p class="content-title">小老头</p>
+						<p>你真漂亮。</p>
+						<p class="content-footer"><text>2020-12-01</text><span>回复</span></p>
+					</view>
+				</li>
+				<li class="clearfix">
+					<view class="portrait portrait-child">
+						<i class="icon iconfont icon-mine"></i>
+					</view>
+					<view class="comment-content">
+						<p class="content-title">小虎牙</p>
+						<p>你眼光真好!</p>
+						<p class="content-footer"><text>2020-12-01</text><span>回复</span></p>
+					</view>
+				</li>
+				<li class="clearfix">
+					<view class="portrait portrait-child">
+						<i class="icon iconfont icon-mine"></i>
+					</view>
+					<view class="comment-content">
+						<p class="content-title">小老头</p>
+						<p><image src="../../static/image/hehe.jpg" mode="widthFix"></image></p>
+						<p class="content-footer"><text>2020-12-01</text><span>回复</span></p>
+					</view>
+				</li>
 			</ul>
 			<ul class="ul-policy" v-if="select==3">
 				<li>1、线上所有的商品说明的解释权归本商品所有</li>
 				<li>2、商品一经出售概不退货</li>
 				<li>3、浏览商品必须购买此商品。如有违规，等着被起诉吧</li>
 			</ul>
+		</view>
+		<view class="detial-nav flex_bet">
+			<ul class="ul-nav clearfix">
+				<li @tap="toHome()">
+					<i class="icon iconfont icon-Home"></i>
+					<span>首页</span>
+				</li>
+				<li @tap="collect()" :class="isCollect?'collect-li':''">
+					<i class="icon iconfont icon-star"></i>
+					<span>收藏</span>
+				</li>
+			</ul>
+			<view class="time_up_pay" @tap="toPay()">
+				立即购买
+			</view>
 		</view>
 	</view>
 </template>
@@ -56,13 +136,26 @@
 				imgPath:this.http+'/banner/case.png',
 				imgUrl:this.http+'/banner/celebration.png',
 				select:1,
-				
+				isCollect:false
 			}
 		},
 		methods: {
 			serveSelect(val){
 				this.select= val;
-			}
+			},
+			toHome(){
+				uni.navigateTo({
+					url:'/pages/main/index'
+				})
+			},
+			collect(){
+				this.isCollect=!this.isCollect;
+			},
+			toPay(){
+				uni.navigateTo({
+					url: '/pages/order/affirm',
+				});
+			},
 		}
 	}
 </script>
@@ -74,6 +167,43 @@
 		background-color: #F3F4F6;
 		.detail-img{
 			width: 100%;
+		}
+		.detial-nav{
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: #fff;
+			border-top: 1px solid #A2A3A5;
+			.ul-nav{
+				height: 100%;
+				padding: 3px 0;
+				li{
+					float: left;
+					width: 50px;
+					text-align: center;
+					font-size: 14px;
+					color: #363636;
+					padding-left: 10px;
+					i{
+						display: block;
+						font-size: 18px;
+					}	
+				}
+				.collect-li{
+					color: #F42633;
+				}
+			}
+			.time_up_pay{
+				width: 150px;
+				height: 46px;
+				line-height: 46px;
+				text-align: center;
+				font-size: 16px;
+				color: #fff;
+				background-color: #f00;
+				
+			}
 		}
 		.detail-message{
 			width: 100%;
@@ -110,6 +240,7 @@
 		.detail-info{
 			width: 100%;
 			margin-top:20px;
+			margin-bottom: 50px;
 			padding: 20px;
 			background-color: #fff;
 			.di-title{
@@ -153,7 +284,64 @@
 					}
 				}
 			}
-			.ul-comment,.ul-policy{
+			.ul-comment{
+				width: 100%;
+				margin-top: 20px;
+				font-size: 16px;
+				li{
+					width: 100%;
+					margin-top: 10px;
+					image{
+						width: 50px;
+					}
+					.portrait{
+						float: left;
+						width: 40px;
+						height: 40px;
+						border: 1px solid #ccc;
+						border-radius: 100%;
+						position: relative;
+						i{
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							transform: translate(-50%,-50%);
+							font-size: 24px;
+						}
+					}
+					.portrait-child{
+						width:25px;
+						height: 25px;
+						margin-left: 50px;
+						i{
+							font-size: 14px;
+						}
+					}
+					.comment-content{
+						float: left;
+						margin-left: 10px;
+						p{
+							font-size: 14px;
+							font-weight: bold;
+							padding-top: 3px;
+						}
+						.content-title{
+							font-size: 14px;
+							font-weight: normal;
+						}
+						.content-footer{
+							font-size: 14px;
+							text{
+								font-size: 12px;
+								color: #ccc;
+								font-weight: normal;
+								margin-right: 15px;
+							}
+						}
+					}
+				}
+			}
+			.ul-policy{
 				width: 100%;
 				font-size: 16px;
 				margin-top: 20px;

@@ -29,9 +29,7 @@
 			this.scrollTop = e.scrollTop;
 		},
 		created(){
-			console.log(banner)
 			this.bannerList = banner;
-			
 			this.tabList = tabs;
 		},
 		mounted(){

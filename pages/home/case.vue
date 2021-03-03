@@ -4,7 +4,7 @@
 			<view class="case-title">
 				<h4>{{item.value}}</h4>
 			</view>
-			<view class="case-icon">
+			<view class="case-icon" @tap="toHoney()">
 				<span>全部{{item.key}}</span>
 				<i class="icon iconfont icon-Right"></i>
 			</view>
@@ -42,9 +42,13 @@
 		},
 		methods:{
 			gotoDetail(){
-				console.log('跳转')
 				uni.navigateTo({
 				    url: '/pages/details/index',
+				});
+			},
+			toHoney(){
+				uni.navigateTo({
+				    url: '/pages/honeyList/index',
 				});
 			}
 		}

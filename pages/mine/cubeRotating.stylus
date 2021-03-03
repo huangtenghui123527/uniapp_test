@@ -1,0 +1,84 @@
+.rect-wrap {
+	width 100%;
+	height 100%;
+	position: relative;
+	perspective: 2000px;
+}
+.rect {
+	width: 100px;
+	height: 100px;
+	transform-style: preserve-3d;
+	transform-origin: 50% 50%;  /* //设置3d空间的原点在平面中心再向Z轴移动200px的位置 */
+	position absolute;
+	top: 40%;
+	left 35%;
+	transform translate(-40%,-35%);
+	// transform translate(-40%,-35%) rotate3d(1,1,1,45deg);
+	// background-color rgba(0,0,0,0.45);
+	img{
+		width: 50px;
+		height: 50px;
+	}
+}
+.slide {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	opacity: 0.85;
+}
+.top {
+	left: 25px;
+	top: -25px;
+	transform: rotateX(-90deg) translateZ(-50px);
+	// transform-origin: bottom;
+	// background: red;
+}
+.bottom {
+	left: 25px;
+	bottom: -25px;
+	transform: rotateX(90deg) translateZ(-50px);
+	// transform-origin: top;
+	// background: grey;
+}
+.left {
+	left: -25px;
+	bottom: 25px;
+	transform: rotateY(90deg) translateZ(-50px);
+	// transform-origin: right;
+	// background: green;
+}
+.right {
+	left: 75px;
+	bottom: 25px;
+	// transform: rotateY(-90deg);
+	transform: rotateY(90deg) translateZ(50px);
+	// transform: translateZ(-100px);
+	// transform-origin: left;
+	// background: yellow;
+}
+.front {
+	left: 25px;
+	top: 25px;
+	transform: translateZ(100px);
+	// background: black;
+}
+.back {
+	left: 25px;
+	top: 25px;
+	transform: translateZ(-100px);
+	// background: blue;
+}
+@keyframes rotate-frame {
+	0% {
+		transform:rotateX(0deg) rotateY(0deg);
+	}
+	50% {
+		transform: rotateX(360deg) rotateY(180deg);
+	}
+	100% {
+		transform:rotateX(720deg) rotateY(360deg);
+	}
+}
+.rect{
+	animation: rotate-frame 3s linear infinite;
+}
